@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "title": "Kontent Aura — AI budgeting that runs itself",
+    "description": "Kontent Aura tracks your spending automatically and builds a budget that adapts to your life — powered by AI. Join the early-access waitlist."
+  },
+  "nav": {
+    "features": "Features",
+    "how": "How it works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "join": "Join waitlist"
+  },
+  "hero": {
+    "badge": "Early access — limited spots",
+    "title": "Your money, on",
+    "titleAccent": "autopilot",
+    "subtitle": "Kontent Aura connects your accounts, categorizes every transaction, and builds a budget that adapts to how you actually live — all with AI, zero spreadsheets.",
+    "emailPlaceholder": "you@email.com",
+    "cta": "Join the waitlist",
+    "secondary": "See how it works",
+    "note": "Free to join · No card required · Leave anytime",
+    "cardBalance": "Total balance",
+    "cardSpending": "Spending this month",
+    "cardBudget": "AI budget",
+    "cardOnTrack": "On track",
+    "cardCategories": {
+      "food": "Food & dining",
+      "transport": "Transport",
+      "subscriptions": "Subscriptions"
+    },
+    "cardInsight": "You'll save $240 more this month if you keep this pace."
+  },
+  "stats": {
+    "waitlist": "on the waitlist",
+    "saved": "avg. monthly savings",
+    "rating": "early tester rating",
+    "setup": "to connect an account"
+  },
+  "features": {
+    "title": "Everything your budget needs, nothing it doesn't",
+    "subtitle": "Aura does the tedious money work in the background so you can just make good decisions.",
+    "items": {
+      "autoTrack": {
+        "title": "Automatic tracking",
+        "desc": "Every transaction is imported and sorted the moment it happens — no manual entry, ever."
+      },
+      "aiBudget": {
+        "title": "AI budgets that adapt",
+        "desc": "Aura learns your habits and rebalances your budget when life changes, not once a year."
+      },
+      "insights": {
+        "title": "Insights you'll act on",
+        "desc": "Plain-language nudges tell you exactly where money leaks and what to do about it."
+      },
+      "goals": {
+        "title": "Goals that stick",
+        "desc": "Set a target and Aura carves out the money automatically, then keeps you on pace."
+      },
+      "security": {
+        "title": "Bank-grade security",
+        "desc": "256-bit encryption, read-only connections, and biometric lock. Your data is never sold."
+      },
+      "forecast": {
+        "title": "Cash-flow forecast",
+        "desc": "See your balance weeks ahead so a surprise bill never becomes a surprise again."
+      }
+    }
+  },
+  "how": {
+    "title": "Set up once, then forget the spreadsheet",
+    "subtitle": "Three steps and about two minutes.",
+    "steps": {
+      "connect": {
+        "title": "Connect your accounts",
+        "desc": "Securely link your cards and accounts with read-only access in a couple of taps."
+      },
+      "learn": {
+        "title": "Let the AI learn",
+        "desc": "Aura categorizes your history and drafts a budget tailored to your real spending."
+      },
+      "grow": {
+        "title": "Watch your money grow",
+        "desc": "Get gentle nudges, hit your goals, and see your savings climb month over month."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Early testers are already hooked",
+    "subtitle": "A few words from people in our private beta.",
+    "items": {
+      "one": {
+        "quote": "I finally know where my money goes without opening a single spreadsheet. Aura just... handles it.",
+        "name": "Malika R.",
+        "role": "Freelance designer"
+      },
+      "two": {
+        "quote": "The AI caught two subscriptions I forgot I was paying for. It paid for itself before launch.",
+        "name": "Daniyar T.",
+        "role": "Software engineer"
+      },
+      "three": {
+        "quote": "Budgeting used to stress me out. Now I get a friendly nudge and I'm back on track in seconds.",
+        "name": "Sofia K.",
+        "role": "Marketing lead"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Simple pricing, waitlist perks",
+    "subtitle": "Join now and lock in early-access pricing for life.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "yearlyNote": "2 months free",
+    "perMonth": "/mo",
+    "mostPopular": "Most popular",
+    "plans": {
+      "free": {
+        "name": "Starter",
+        "price": "$0",
+        "desc": "Everything you need to see where your money goes.",
+        "features": [
+          "Connect up to 2 accounts",
+          "Automatic categorization",
+          "Monthly AI budget",
+          "Basic insights"
+        ],
+        "cta": "Join free"
+      },
+      "pro": {
+        "name": "Aura Pro",
+        "price": "$7",
+        "desc": "The full AI copilot for people serious about saving.",
+        "features": [
+          "Unlimited accounts",
+          "Adaptive AI budgets & goals",
+          "Cash-flow forecasting",
+          "Priority insights & alerts",
+          "Early-access price locked forever"
+        ],
+        "cta": "Get early access"
+      },
+      "family": {
+        "name": "Family",
+        "price": "$12",
+        "desc": "Shared finances for the whole household.",
+        "features": [
+          "Everything in Pro",
+          "Up to 5 members",
+          "Shared goals & budgets",
+          "Household insights"
+        ],
+        "cta": "Join waitlist"
+      }
+    }
+  },
+  "faq": {
+    "title": "Questions, answered",
+    "subtitle": "Everything else you might be wondering.",
+    "items": {
+      "when": {
+        "q": "When does Kontent Aura launch?",
+        "a": "We're rolling out to the waitlist in batches. Join now and you'll be among the first invited — earlier sign-ups get in sooner."
+      },
+      "safe": {
+        "q": "Is my financial data safe?",
+        "a": "Yes. Connections are read-only and protected with 256-bit encryption. We never store your bank credentials and never sell your data."
+      },
+      "cost": {
+        "q": "Will it cost anything?",
+        "a": "There's a free Starter plan forever. Waitlist members who upgrade lock in early-access pricing that never goes up."
+      },
+      "banks": {
+        "q": "Which banks are supported?",
+        "a": "We support thousands of banks and cards through our secure providers, with new institutions added every week."
+      },
+      "leave": {
+        "q": "Can I leave the waitlist?",
+        "a": "Anytime, in one click. We'll only email you about your spot and the launch — nothing else."
+      }
+    }
+  },
+  "cta": {
+    "title": "Take your money off manual",
+    "subtitle": "Join thousands getting early access to the AI budgeting app that actually does the work.",
+    "emailPlaceholder": "you@email.com",
+    "button": "Join the waitlist",
+    "note": "No spam. Just your invite when it's ready."
+  },
+  "waitlist": {
+    "success": "You're on the list! 🎉",
+    "successNote": "We'll email you the moment your invite is ready.",
+    "invalid": "Please enter a valid email address.",
+    "loading": "Joining…"
+  },
+  "footer": {
+    "tagline": "AI budgeting that runs itself.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "links": {
+      "features": "Features",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "about": "About",
+      "blog": "Blog",
+      "careers": "Careers",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "security": "Security"
+    },
+    "rights": "All rights reserved.",
+    "disclaimer": "Kontent Aura is a demo landing page. Not a financial institution."
+  }
+}

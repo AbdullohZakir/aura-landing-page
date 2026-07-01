@@ -1,26 +1,159 @@
 @import "tailwindcss";
 
+/* Toggle dark styles when a .dark class is on a parent (set by next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens ---------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fbfdfc;
+  --surface: #ffffff;
+  --foreground: #0a0f0d;
+  --muted: #f1f5f3;
+  --muted-foreground: #5c6b66;
+  --border: #e3ebe8;
+  --card: #ffffff;
+  --card-border: #e6efeb;
+
+  /* Emerald -> teal brand ramp */
+  --brand: #10b981;
+  --brand-strong: #059669;
+  --brand-foreground: #ffffff;
+  --accent: #14b8a6;
+  --ring: #10b981;
+
+  /* Glassy surfaces */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-border: rgba(16, 185, 129, 0.18);
+
+  --shadow-soft: 0 1px 2px rgba(10, 15, 13, 0.04),
+    0 12px 32px -12px rgba(10, 15, 13, 0.12);
+  --shadow-glow: 0 20px 60px -20px rgba(16, 185, 129, 0.45);
+}
+
+.dark {
+  --background: #060a09;
+  --surface: #0b1211;
+  --foreground: #eef4f1;
+  --muted: #111a18;
+  --muted-foreground: #93a49e;
+  --border: #1c2825;
+  --card: #0c1413;
+  --card-border: #1a2725;
+
+  --brand: #34d399;
+  --brand-strong: #10b981;
+  --brand-foreground: #04140f;
+  --accent: #2dd4bf;
+  --ring: #34d399;
+
+  --glass-bg: rgba(12, 20, 19, 0.55);
+  --glass-border: rgba(52, 211, 153, 0.18);
+
+  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.4),
+    0 20px 48px -20px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 24px 70px -22px rgba(16, 185, 129, 0.5);
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-accent: var(--accent);
+  --color-ring: var(--ring);
+
+  --radius-card: 1.25rem;
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand) 30%, transparent);
+}
+
+/* ---------- Reusable helpers ---------- */
+.gradient-text {
+  background-image: linear-gradient(
+    135deg,
+    var(--brand) 0%,
+    var(--accent) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Ambient aurora blobs used behind the hero / CTA */
+.aurora {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(72px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+/* Scroll-reveal (progressive enhancement: visible by default, JS adds motion) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-24px) translateX(12px);
+  }
+}
+.animate-float-slow {
+  animation: float-slow 14s ease-in-out infinite;
 }
